@@ -1,0 +1,33 @@
+body {
+  	font: 16px 
+}
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+.thumbnail img {
+	max-height: 250px;
+}
+.thumbnail .description {
+	color: #58518c;
+}
+
+.price {
+	font-weight:bold;
+	font-size: 16px;
+}
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+
+
+
+
+

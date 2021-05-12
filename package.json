@@ -1,0 +1,36 @@
+{
+  "name": "shopping-cart",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.17.1",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^1.3.2",
+    "consolidate": "^0.14.5",
+    "cookie-parser": "^1.4.5",
+    "csurf": "^1.11.0",
+    "debug": "^2.6.9",
+    "ejs": "^2.7.4",
+    "express": "^4.15.5",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^3.2.1",
+    "hbs": "^4.0.6",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.7",
+    "mongoose-bluebird-utils": "0.0.11",
+    "morgan": "~1.8.1",
+    "nodemon": "^2.0.7",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.4.5",
+    "stripe": "^4.25.0"
+  },
+  "devDependencies": {
+    "handlebars": "^4.5.0"
+  }
+}

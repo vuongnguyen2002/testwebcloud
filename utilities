@@ -1,0 +1,33 @@
+utilities
+var successMsg = req.flash('success')[0];
+  Product.find(function(err,docs){
+  	var productChunks = [];
+  	var chunkSize = 3;
+  	for(var i=0;i<docs.length;i+=chunkSize){
+  		productChunks.push(docs.slice(i,i+chunkSize));
+  	}
+
+ 
+  	{ title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessage:!successMsg }
+
+ Book.findById(productId, function(err, product){
+      if (err){
+         return res.redirect('/');
+      }
+      cart.add(book, book.id);
+      req.session.cart = cart;
+      console.log(req.session.cart);
+      res.redirect('/categories/books');
+    });
+    Electronic.findById(productId, function(err, product){
+      if (err){
+         return res.redirect('/');
+      }
+      cart.add(electronic, electronic.id);
+      req.session.cart = cart;
+      console.log(req.session.cart);
+      res.redirect('/categories/elec');
+    });
+
+    594d03a780377725c8f5c6f9
+    594d03a780377725c8f5c6f9

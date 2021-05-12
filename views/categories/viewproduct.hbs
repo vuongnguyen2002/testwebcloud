@@ -1,0 +1,25 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col"></th>
+      <th scope="col">Handle</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+   {{# each phones}}
+  <tbody>
+     {{# each this}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.title}}</td>
+      <td>Otto</td>
+      <td> <a href="/add-a-product" class="btn btn-danger pull-left" role="button">Add new </a></td>
+      <td> <a href="/delete/{{this._id}}" class="btn btn-danger pull-left" role="button">Delete</a></td>
+      <td><a href="/categories/updatepro?id={{this._id}}" class="btn btn-success pull-left" role="button">Edit</a><td>
+    </tr>
+    {{/each}}
+  </tbody>
+  {{/each}}
+</table>
